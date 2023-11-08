@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the significance of an HTTP request's method?
-
+They are means of communication between the server and the client.
 
 ## Notes
 
