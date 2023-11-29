@@ -21,6 +21,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you get back the modified row without a separate `select` statement?
   Using update and specify the row that is modified will read back the updated data.
 - Why did you get an error when trying to delete certain films?
+  It was against foriegn key constraints meaning I do not have the permission to make such change.
 
 ## Notes
 
