@@ -1,0 +1,36 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  border: solid 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.thirds {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.left {
+  float: left;
+  align-items: center;
+}
+
+.slide {
+  width: 300px;
+  max-height: 350px;
+}
+
+img {
+  width: 100%;
+}
+
+.right {
+  float: right;
+  align-items: center;
+}
