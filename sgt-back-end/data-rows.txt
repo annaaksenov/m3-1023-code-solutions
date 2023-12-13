@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>error: bind message supplies 1 parameters, but prepared statement &quot;&quot; requires 0<br> &nbsp; &nbsp;at /workspaces/m3-1023-code-solutions/sgt-back-end/node_modules/pg-pool/index.js:45:11<br> &nbsp; &nbsp;at processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+</body>
+</html>
