@@ -4,7 +4,6 @@ import pg from 'pg';
 import argon2 from 'argon2';
 import express from 'express';
 import { ClientError, errorMiddleware } from './lib/index.js';
-import { resolveSoa } from 'dns';
 
 type User = {
   username: string;
@@ -42,10 +41,11 @@ app.post('/api/auth/sign-up', async (req, res, next) => {
      * Hint: Insert statements can include a `returning` clause to retrieve the insterted row(s).
      */
     const hashedPass = await argon2.hash(password);
-    const sql = 'insert into users(username, hashedPassword) values($1, $2) returning *';
+    const sql = 'insert into "users" ("username", "hashedPassword") values($1, $2) returning *';
     const values = [username, hashedPass];
     const result = await db.query<User>(sql, values);
-      const createdHash = result.rows[0]
+    const createdHash = result.rows[0];
+    console.log('createdHash: ', createdHash);
       res.status(201).json(createdHash);
   } catch (err) {
     next(err);

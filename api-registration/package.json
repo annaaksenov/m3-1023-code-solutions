@@ -1,4 +1,10 @@
 {
+  "nodemonConfig": {
+    "execMap": {
+      "ts": "ts-node-esm",
+      "js": "ts-node-esm"
+    }
+  },
   "name": "api-registration",
   "version": "1.0.0",
   "scripts": {
@@ -10,5 +16,9 @@
     "install:server": "npm install --prefix server",
     "install:env": "cp server/.env.example server/.env",
     "postinstall": "npm-run-all --parallel install:*"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.6"
   }
 }
