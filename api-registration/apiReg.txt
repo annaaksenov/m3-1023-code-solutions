@@ -1,0 +1,7 @@
+        List of relations
+ Schema |  Name   | Type  | Owner 
+--------+---------+-------+-------
+ public | entries | table | dev
+ public | users   | table | dev
+(2 rows)
+
